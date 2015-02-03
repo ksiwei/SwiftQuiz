@@ -1,3 +1,3 @@
 # SwiftQuiz
 
-My first Swift App that allows your to create quizzes/flash cards. 
+My first Swift App that allows you to create quizzes/flash cards. 

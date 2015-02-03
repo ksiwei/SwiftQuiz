@@ -15,6 +15,9 @@
 		DD2AE9AE1A377F680059C227 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2AE9AD1A377F680059C227 /* Images.xcassets */; };
 		DD2AE9B11A377F680059C227 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2AE9AF1A377F680059C227 /* LaunchScreen.xib */; };
 		DD2AE9BD1A377F680059C227 /* AnimalGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2AE9BC1A377F680059C227 /* AnimalGameTests.swift */; };
+		DD2AE9F81A378C850059C227 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2AE9F71A378C850059C227 /* Question.swift */; };
+		DDE866A51A37A85F00DFF1B7 /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE866A41A37A85F00DFF1B7 /* CreateQuestionViewController.swift */; };
+		DDE866A71A37B0AA00DFF1B7 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE866A61A37B0AA00DFF1B7 /* List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		DD2AE9B61A377F680059C227 /* AnimalGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2AE9BB1A377F680059C227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2AE9BC1A377F680059C227 /* AnimalGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGameTests.swift; sourceTree = "<group>"; };
+		DD2AE9F71A378C850059C227 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = Models/Question.swift; sourceTree = "<group>"; };
+		DDE866A41A37A85F00DFF1B7 /* CreateQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestionViewController.swift; sourceTree = "<group>"; };
+		DDE866A61A37B0AA00DFF1B7 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,12 @@
 		DD2AE99F1A377F680059C227 /* AnimalGame */ = {
 			isa = PBXGroup;
 			children = (
+				DD2AE9F61A378C530059C227 /* Models */,
 				DD2AE9A21A377F680059C227 /* AppDelegate.swift */,
 				DD2AE9A41A377F680059C227 /* RootViewController.swift */,
 				DD2AE9A61A377F680059C227 /* DataViewController.swift */,
 				DD2AE9A81A377F680059C227 /* ModelController.swift */,
+				DDE866A41A37A85F00DFF1B7 /* CreateQuestionViewController.swift */,
 				DD2AE9AA1A377F680059C227 /* Main.storyboard */,
 				DD2AE9AD1A377F680059C227 /* Images.xcassets */,
 				DD2AE9AF1A377F680059C227 /* LaunchScreen.xib */,
@@ -116,6 +124,15 @@
 				DD2AE9BB1A377F680059C227 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD2AE9F61A378C530059C227 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD2AE9F71A378C850059C227 /* Question.swift */,
+				DDE866A61A37B0AA00DFF1B7 /* List.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,9 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2AE9F81A378C850059C227 /* Question.swift in Sources */,
 				DD2AE9A51A377F680059C227 /* RootViewController.swift in Sources */,
 				DD2AE9A91A377F680059C227 /* ModelController.swift in Sources */,
+				DDE866A71A37B0AA00DFF1B7 /* List.swift in Sources */,
 				DD2AE9A71A377F680059C227 /* DataViewController.swift in Sources */,
+				DDE866A51A37A85F00DFF1B7 /* CreateQuestionViewController.swift in Sources */,
 				DD2AE9A31A377F680059C227 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +435,7 @@
 				DD2AE9C21A377F680059C227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD2AE9C31A377F680059C227 /* Build configuration list for PBXNativeTarget "AnimalGameTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +444,7 @@
 				DD2AE9C51A377F680059C227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

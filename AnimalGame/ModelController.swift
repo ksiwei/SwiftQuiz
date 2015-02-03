@@ -20,14 +20,11 @@ import UIKit
 
 class ModelController: NSObject, UIPageViewControllerDataSource {
 
-    var pageData = NSArray()
-
+    var pageData = NSArray();
 
     override init() {
         super.init()
-        // Create the data model.
-        let dateFormatter = NSDateFormatter()
-        pageData = dateFormatter.monthSymbols
+        self.pageData = List.sharedInstance.questions;
     }
 
     func viewControllerAtIndex(index: Int, storyboard: UIStoryboard) -> DataViewController? {
@@ -38,7 +35,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
 
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewControllerWithIdentifier("DataViewController") as DataViewController
-        dataViewController.dataObject = self.pageData[index]
+        dataViewController.dataObject = self.pageData[index] as? Question
         return dataViewController
     }
 

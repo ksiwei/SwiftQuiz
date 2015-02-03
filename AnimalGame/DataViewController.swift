@@ -10,8 +10,9 @@ import UIKit
 
 class DataViewController: UIViewController {
 
-    @IBOutlet weak var dataLabel: UILabel!
-    var dataObject: AnyObject?
+    @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
+    var dataObject: Question?
 
 
     override func viewDidLoad() {
@@ -26,13 +27,13 @@ class DataViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        if let obj: AnyObject = dataObject {
-            self.dataLabel!.text = obj.description
+        if let obj: Question = dataObject {
+            self.questionLabel!.text = obj.question
+            self.answerLabel!.text = obj.answer
         } else {
-            self.dataLabel!.text = ""
+            self.questionLabel!.text = ""
+            self.answerLabel!.text = ""
         }
     }
-
-
 }
 
